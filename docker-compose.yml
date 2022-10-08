@@ -1,0 +1,28 @@
+version: '3.9'
+services:
+  bitcoin-core:
+    build:
+      context: .
+      args:
+        - BASE=ubuntu
+        - UBUNTU_VERSION=22.04
+#        - BASE=alpine
+#        - ALPINE_VERSION=3.16
+        - BITCOIN_CORE_VERSION=23.0
+        - UID=1000
+        - GID=1000
+      target: deploy
+    container_name: bitcoin-core
+    ports:
+      - '8332:8332'
+      - '8333:8333'
+      - '18332:18332'
+      - '18333:18333'
+      - '18443:18443'
+      - '18444:18444'
+      - '38332:38332'
+      - '38333:38333'
+    volumes:
+      - bitcoin/config:/etc/bitcoin
+      - bitcoin/data:/var/lib/bitcoin
+      - bitcoin/logs:/var/log/bitcoin
