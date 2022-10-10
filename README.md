@@ -1,5 +1,44 @@
 # Docker Bitcoin Core
 
+## Supported versions
+
+- 23.0
+- 22.0
+
+## Pull
+
+### Docker Hub
+
+#### Ubuntu
+
+```
+docker pull dwreg/bitcoin-core
+docker pull dwreg/bitcoin-core:<version>
+```
+
+#### Alpine
+
+```
+docker pull dwreg/bitcoin-core:alpine
+docker pull dwreg/bitcoin-core:<version>-alpine
+```
+
+### Darkwolf Registry
+
+#### Ubuntu
+
+```
+docker pull registry.darkwolf.cloud/bitcoin-core
+docker pull registry.darkwolf.cloud/bitcoin-core:<version>
+```
+
+#### Alpine
+
+```
+docker pull registry.darkwolf.cloud/bitcoin-core:alpine
+docker pull registry.darkwolf.cloud/bitcoin-core:<version>-alpine
+```
+
 ## Build
 
 ### Ubuntu
