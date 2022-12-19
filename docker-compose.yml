@@ -8,7 +8,7 @@ services:
         - UBUNTU_VERSION=22.04
 #        - BASE=alpine
 #        - ALPINE_VERSION=3.16
-        - BITCOIN_CORE_VERSION=23.0
+        - BITCOIN_CORE_VERSION=24.0.1
         - UID=1000
         - GID=1000
       target: deploy

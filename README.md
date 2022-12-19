@@ -2,7 +2,10 @@
 
 ## Supported versions
 
+- 24.0.1
+- 24.0
 - 23.0
+- 22.1
 - 22.0
 
 ## Pull
